@@ -127,6 +127,10 @@ set(SIDX_STORAGEMANAGER_CPP
   "${SIDX_SRC_DIR}/storagemanager/MemoryStorageManager.h"
   "${SIDX_SRC_DIR}/storagemanager/RandomEvictionsBuffer.cc"
   "${SIDX_SRC_DIR}/storagemanager/RandomEvictionsBuffer.h"
+  "${SIDX_SRC_DIR}/storagemanager/FIFOEvictionsBuffer.cc"
+  "${SIDX_SRC_DIR}/storagemanager/FIFOEvictionsBuffer.h"
+  "${SIDX_SRC_DIR}/storagemanager/LRUEvictionsBuffer.cc"
+  "${SIDX_SRC_DIR}/storagemanager/LRUEvictionsBuffer.h"
 )
 list(APPEND SIDX_CPP ${SIDX_STORAGEMANAGER_CPP})
 

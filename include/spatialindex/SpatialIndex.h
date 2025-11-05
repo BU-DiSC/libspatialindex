@@ -236,6 +236,12 @@ namespace SpatialIndex
 
 		SIDX_DLL  IBuffer* returnRandomEvictionsBuffer(IStorageManager& ind, Tools::PropertySet& in);
 		SIDX_DLL  IBuffer* createNewRandomEvictionsBuffer(IStorageManager& in, uint32_t capacity, bool bWriteThrough);
+
+		SIDX_DLL  IBuffer* returnFIFOEvictionsBuffer(IStorageManager& ind, Tools::PropertySet& in);
+		SIDX_DLL  IBuffer* createNewFIFOEvictionsBuffer(IStorageManager& in, uint32_t capacity, bool bWriteThrough);
+
+		SIDX_DLL  IBuffer* returnLRUEvictionsBuffer(IStorageManager& ind, Tools::PropertySet& in);
+		SIDX_DLL  IBuffer* createNewLRUEvictionsBuffer(IStorageManager& in, uint32_t capacity, bool bWriteThrough);
 	}
 
 	//
